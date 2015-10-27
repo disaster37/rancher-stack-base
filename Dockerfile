@@ -8,9 +8,9 @@ RUN apt-get update && \
     update-locale LANG=C.UTF-8 LC_MESSAGES=POSIX && \
     locale-gen en_US.UTF-8 && \
     dpkg-reconfigure locales
-RUN add-apt-repository -y ppa:gluster/glusterfs-3.5 && \
+RUN add-apt-repository -y ppa:gluster/glusterfs-3.7 && \
     apt-get update && \
-    apt-get install -y supervisor glusterfs-client curl unzip pwgen inotify-tools
+    apt-get install -y supervisor glusterfs-client curl unzip pwgen inotify-tools dig vim
 
 
 # Add logrotate setting
