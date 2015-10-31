@@ -10,7 +10,7 @@ RUN apt-get update && \
     dpkg-reconfigure locales
 RUN add-apt-repository -y ppa:gluster/glusterfs-3.7 && \
     apt-get update && \
-    apt-get install -y supervisor glusterfs-client curl unzip pwgen inotify-tools dnsutils vim git
+    apt-get install -y supervisor glusterfs-client curl unzip pwgen inotify-tools dnsutils vim git wget
 
 
 # Add logrotate setting
