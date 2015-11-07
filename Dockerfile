@@ -12,6 +12,8 @@ RUN add-apt-repository -y ppa:gluster/glusterfs-3.7 && \
     apt-get update && \
     apt-get install -y supervisor glusterfs-client curl unzip pwgen inotify-tools dnsutils vim git wget python-pip
 
+# Add Python API for rancher-metadata
+RUN pip install rancher_metadata
 
 # Add logrotate setting
 ADD assets/setup/logrotate-supervisor.conf /etc/logrotate.d/supervisord
