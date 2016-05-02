@@ -9,7 +9,7 @@ RUN apt-get update && \
     locale-gen en_US.UTF-8 && \
     dpkg-reconfigure locales
 RUN apt-get update && \
-    apt-get install -y supervisor curl unzip pwgen inotify-tools dnsutils vim git wget python-pip sudo
+    apt-get install -y supervisor curl unzip pwgen inotify-tools dnsutils vim git wget python-pip sudo logrotate
 
 # Add Python API for rancher-metadata
 RUN pip install rancher_metadata
