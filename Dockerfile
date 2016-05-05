@@ -19,6 +19,7 @@ ADD assets/setup/logrotate-supervisor.conf /etc/logrotate.d/supervisord
 
 # Add supervisor setting
 ADD assets/setup/supervisor-cron.conf /etc/supervisor/conf.d/cron.conf
+ADD assets/setup/supervisor-logrotate.conf /etc/supervisor/conf.d/logrotate.conf
 
 
 
